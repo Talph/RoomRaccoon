@@ -4,7 +4,8 @@ declare(strict_types=1);
 
 namespace Core;
 
-use Exceptions\ViewNotFoundException;
+
+use Core\Exceptions\ViewNotFoundException;
 
 class View
 {
@@ -49,6 +50,9 @@ class View
         return (string)ob_get_clean();
     }
 
+    /**
+     * @throws ViewNotFoundException
+     */
     public function __toString(): string
     {
         return $this->render();

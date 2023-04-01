@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Core;
 
-use Core\Exceptions\ViewNotFoundException;
 use Core\Http\Router;
 use Doctrine\DBAL\Exception;
 use Dotenv\Dotenv;
@@ -42,18 +41,4 @@ class App
         return $this;
     }
 
-    /**
-     * @throws ViewNotFoundException
-     */
-    public function run()
-    {
-        try {
-
-            echo $this->router->resolve($this->request['uri'], strtolower($this->request['method']));
-
-        } catch (ViewNotFoundException) {
-
-            throw new ViewNotFoundException('URI could not be found');
-        }
-    }
 }

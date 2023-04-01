@@ -15,7 +15,8 @@
     "doctrine/orm": "^2.14.1",
     "nesbot/carbon": "^2.66",
     "psr/container": "^2.0",
-    "vlucas/phpdotenv": "^5.5"
+    "vlucas/phpdotenv": "^5.5",
+    "ext-pdo": "*"
   },
   "autoload": {
     "psr-4": {

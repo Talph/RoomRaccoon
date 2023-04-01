@@ -1,6 +1,13 @@
 <?php
 
-abstract class Controller
+declare(strict_types=1);
+
+namespace Core\Http;
+
+use Core\Http\Json\JsonResponse;
+use \Exception;
+
+abstract class Controller extends JsonResponse
 {
     /**
      * @throws Exception

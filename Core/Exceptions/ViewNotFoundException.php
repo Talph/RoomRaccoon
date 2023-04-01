@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Exceptions;
+namespace Core\Exceptions;
 
 class ViewNotFoundException extends \Exception
 {

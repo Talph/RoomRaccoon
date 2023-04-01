@@ -1,5 +1,8 @@
 <?php
 
+namespace Core\Contracts;
+
+use InvalidArgumentException;
 
 interface ValidationErrorMessage
 {

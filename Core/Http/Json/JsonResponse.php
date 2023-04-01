@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Json;
+namespace Core\Http\Json;
 
 use Exception;
 

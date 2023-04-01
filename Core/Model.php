@@ -4,7 +4,6 @@ namespace Core;
 
 use Carbon\Carbon;
 use Doctrine\DBAL\Exception;
-use PDOStatement;
 
 /**
  * Base model
@@ -18,13 +17,6 @@ abstract class Model
     public function __construct()
     {
         $this->db = App::db();
-    }
-
-    public function fetchLazy(PDOStatement $statement): \Generator
-    {
-        foreach ($statement as $record) {
-            yield $record;
-        }
     }
 
     /**
@@ -144,13 +136,13 @@ abstract class Model
                 'deleted_at' => Carbon::now()->toDateTimeString(),
             ];
             $this->db->beginTransaction();
-            $invoice = $this->db->update($this->table, $appendDates, ['id' => $id]);
+            $list = $this->db->update($this->table, $appendDates, ['id' => $id]);
             $this->db->commit();
 
             return [
                 'data' => [
-                    'code' => $invoice ? 204 : 400,
-                    'message' => $invoice ? "$this->table deleted successfully" : "Error deleting $this->table"
+                    'code' => $list ? 204 : 400,
+                    'message' => $list ? "$this->table deleted successfully" : "Error deleting $this->table"
                 ]
             ];
         } catch (\Exception $e) {

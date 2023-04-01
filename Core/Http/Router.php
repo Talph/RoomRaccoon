@@ -2,8 +2,19 @@
 
 declare(strict_types=1);
 
+namespace Core\Http;
+
+use Core\App;
+use Core\Container;
+use Core\Exceptions\ViewNotFoundException;
+use Core\Middleware\AuthMiddleware;
+use Core\Redirect;
+use Exception;
+use ReflectionMethod;
+
 class Router
 {
+    use Validate;
 
     private const METHOD_POST = 'POST', METHOD_GET = 'GET', METHOD_DELETE = 'DELETE', METHOD_PUT = 'PUT';
     private array $rulesBagMessage = [], $handlers = [];
@@ -11,7 +22,7 @@ class Router
 
     public function __construct()
     {
-
+        (new App(new Container(), $this, ['url' => $_SERVER['REQUEST_URI'], ['method' => $_SERVER['REQUEST_METHOD']]]))->boot();
     }
 
     public function get(string $path, $handler, $middleware = 'web'): void
@@ -107,7 +118,7 @@ class Router
                 return $_REQUEST;
             }
         } catch (\Exception $e) {
-
+            return Redirect::route('/error', ['error_messages' => $e->getMessage()]);
         }
     }
 
@@ -121,6 +132,10 @@ class Router
         foreach ($this->handlers as $handler) {
             if ($handler['path'] === $requestPath && $method === $handler['method']) {
                 $callback = $handler['controller'];
+                if ($handler['middleware'] !== 'web') {
+                    $checkAuth = new AuthMiddleware();
+                    $checkAuth->run();
+                }
                 break;
             }
         }
@@ -181,6 +196,10 @@ class Router
                         $_REQUEST[$urlMatch['varName']] = $urlMatch['varValue'];
                         $callback = $handler['controller'];
 
+                        if ($handler['middleware'] !== 'web') {
+                            $checkAuth = new AuthMiddleware();
+                            $checkAuth->run();
+                        }
                     }
                 }
             }
