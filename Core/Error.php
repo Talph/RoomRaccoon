@@ -3,9 +3,9 @@
 namespace Core;
 
 use App\Config;
+use Core\Http\Json\JsonResponse;
 use ErrorException;
 use Exception;
-use Json\JsonResponse;
 
 /**
  * Error and exception handler
@@ -59,6 +59,10 @@ class Error
             }
 
             return JsonResponse::response()->json(["message" => $message]);
+
+        } else if ($code === 404) {
+
+            return Redirect::route('/'. $code);
 
         } else if (Config::SHOW_ERRORS) {
             echo "<h1>Fatal error</h1>";
