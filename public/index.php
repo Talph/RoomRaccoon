@@ -2,10 +2,11 @@
 
 declare(strict_types=1);
 
+use Core\Http\Router;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
-use Core\Http\Router;
-
+use App\Http\Controllers\ShoppingListController;
 /**
  * Composer
  */

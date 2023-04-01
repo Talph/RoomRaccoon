@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 
-use Core\Http\Controller;
+use Core\Http\Controllers;
 
 class DashboardController extends Controller
 {
