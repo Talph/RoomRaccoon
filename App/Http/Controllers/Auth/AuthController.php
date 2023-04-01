@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Requests\LoginFormRequest;
+use App\Models\User;
 use Core\Http\Controller;
 use Core\Redirect;
 use Core\View;
