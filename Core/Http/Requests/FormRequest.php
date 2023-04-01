@@ -5,7 +5,7 @@ namespace Core\Http\Requests;
 use Core\{Redirect, Request};
 use Core\Http\Validate;
 use Exception;
-use ValidationErrorMessage;
+use Core\Contracts\ValidationErrorMessage;
 
 abstract class FormRequest extends Request implements ValidationErrorMessage
 {

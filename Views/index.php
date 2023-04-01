@@ -76,14 +76,14 @@
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                aria-expanded="true" aria-controls="collapseUtilities">
                 <i class="fas fa-fw fa-wrench"></i>
-                <span>Invoices</span>
+                <span>shopping lists</span>
             </a>
             <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                  data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Invoices:</h6>
-                    <a class="collapse-item" href="/invoices/create">Create invoice</a>
-                    <a class="collapse-item" href="/invoices">View all invoices</a>
+                    <h6 class="collapse-header">shopping lists:</h6>
+                    <a class="collapse-item" href="/shopping-lists/create">Create shopping-list</a>
+                    <a class="collapse-item" href="/shopping-lists">View all shopping lists</a>
                 </div>
             </div>
         </li>
