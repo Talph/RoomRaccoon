@@ -19,6 +19,7 @@ CREATE TABLE IF NOT EXISTS `shopping_lists`
 (
     `id`          int      NOT NULL AUTO_INCREMENT,
     `user_id`     int      NOT NULL,
+    `title`       varchar(100) NOT NULL,
     `description` text     NULL,
     `created_at`  datetime NOT NULL,
     `updated_at`  datetime NULL,

@@ -35,7 +35,7 @@ class ShoppingListController extends Controller
 
     public function create(): View
     {
-        return View::make('/shopping-lists/create');
+        return View::make('/shopping-lists/create', ['user' => $_SESSION['id']]);
     }
 
     public function store(ShoppingListFormRequest $request): Redirect
@@ -43,6 +43,7 @@ class ShoppingListController extends Controller
         $ShoppingList = new ShoppingList();
         $createdShoppingList = $ShoppingList->create([
             'user_id' => $request->get('user_id'),
+            'title' => $request->get('title'),
             'description' => $request->get('description'),
         ]);
 
@@ -50,8 +51,7 @@ class ShoppingListController extends Controller
         for ($i = 0; $i < count($request->get('name')); $i++) {
             $ShoppingListItem->create([
                 'shopping_list_id' => $createdShoppingList['id'],
-                'name' => $createdShoppingList['name'],
-                'description' => $request->get('description'),
+                'name' => $createdShoppingList['item_name'],
                 'quantity' => $request->get('item_quantity')[$i],
                 'price' => $request->get('item_price')[$i],
             ]);
@@ -77,8 +77,7 @@ class ShoppingListController extends Controller
                 'id' => $request->get('item_id'),
                 [
                     'shopping_list_id' => $createdShoppingList['id'],
-                    'name' => $request->get('name')[$i],
-                    'description' => $request->get('description'),
+                    'name' => $request->get('item_name')[$i],
                     'quantity' => $request->get('item_quantity')[$i],
                     'is_checked' => $request->get('is_checked')[$i]
                 ]
