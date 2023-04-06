@@ -38,6 +38,7 @@ CREATE TABLE IF NOT EXISTS `shopping_items`
     `description`      varchar(255)   NOT NULL,
     `price`            decimal(10, 4) NULL,
     `quantity`         int(11)        NOT NULL,
+    `is_checked`       int(11)        NULL DEFAULT 0,
     `created_at`       datetime       NOT NULL,
     `updated_at`       datetime       NULL,
     `deleted_at`       datetime       NULL,

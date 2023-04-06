@@ -16,7 +16,7 @@ class ShoppingListFormRequest extends FormRequest
         return [
             'user_id' => 'int,required',
             'description' => 'string,required',
-            'product' => 'array,required',
+            'name' => 'array,required',
             'quantity' => 'array,required',
             'price' => 'array,required',
             'is_checked' => 'array,required',

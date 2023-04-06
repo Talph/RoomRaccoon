@@ -10,12 +10,11 @@ use Core\View;
 
 class DashboardController extends Controller
 {
-    public function index()
+    public function index(): View
     {
         $lists = new ShoppingList();
 
         return View::make('dashboard/index', ['lists' => $lists->all()]);
-
     }
 
 }

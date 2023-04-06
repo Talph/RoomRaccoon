@@ -81,6 +81,7 @@ class ShoppingListController extends Controller
                     'name' => $request->get('name')[$i],
                     'description' => $request->get('description'),
                     'quantity' => $request->get('item_quantity')[$i],
+                    'is_checked' => $request->get('is_checked')[$i]
                 ]
             ]);
         }
