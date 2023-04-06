@@ -42,26 +42,22 @@ class ShoppingListController extends Controller
     {
         $ShoppingList = new ShoppingList();
         $createdShoppingList = $ShoppingList->create([
-            'customer_id' => $request->get('customer_id'),
+            'user_id' => $request->get('user_id'),
             'description' => $request->get('description'),
-            'sub_total' => $request->get('sub_total'),
-            'total_amount' => $request->get('total_amount'),
-            'vat' => $request->get('tax_amount'),
         ]);
 
         $ShoppingListItem = new ShoppingListItem();
         for ($i = 0; $i < count($request->get('product')); $i++) {
             $ShoppingListItem->create([
-                'ShoppingList_id' => $createdShoppingList['id'],
-                'product' => $request->get('product')[$i],
+                'shopping_list_id' => $createdShoppingList['id'],
+                'name' => $createdShoppingList['name'],
                 'description' => $request->get('description'),
                 'quantity' => $request->get('item_quantity')[$i],
                 'price' => $request->get('item_price')[$i],
-                'total' => $request->get('item_total')[$i],
             ]);
         }
 
-        return Redirect::route('/shopping-lists', ['success_messages' => 'Created ShoppingList successfully!']);
+        return Redirect::route('/shopping-lists', ['success_messages' => 'Created shopping list successfully!']);
 
     }
 
@@ -70,37 +66,36 @@ class ShoppingListController extends Controller
         $ShoppingList = new ShoppingList();
         $createdShoppingList = $ShoppingList->update([
             'id' => $request->get('id'),
-            ['customer_id' => $request->get('customer_id'),
+            [
+                'user_id' => $request->get('user_id'),
                 'description' => $request->get('description'),
-                'sub_total' => $request->get('sub_total'),
-                'total_amount' => $request->get('total_amount'),
-                'vat' => $request->get('tax_amount')],
+            ],
         ]);
 
         $ShoppingListItem = new ShoppingListItem();
         for ($i = 0; $i < count($request->get('product')); $i++) {
             $ShoppingListItem->update([
                 'id' => $request->get('item_id'),
-                ['ShoppingList_id' => $createdShoppingList['id'],
+                [
+                    'shopping_list_id' => $createdShoppingList['id'],
                     'product' => $request->get('product')[$i],
                     'description' => $request->get('description'),
                     'quantity' => $request->get('item_quantity')[$i],
-                    'price' => $request->get('item_price')[$i],
-                    'total' => $request->get('item_total')[$i]]
+                ]
             ]);
         }
 
         return Redirect::route('/shopping-lists', ['success_messages' => 'Created ShoppingList successfully!']);
     }
 
-    public function delete(int $id)
+    public function delete(int $id): Redirect
     {
         $ShoppingList = new ShoppingList();
         $ShoppingList->delete($id);
         return Redirect::route('/shopping-lists');
     }
 
-    public function destroy(int $id)
+    public function destroy(int $id): Redirect
     {
         $ShoppingList = new ShoppingList();
         $ShoppingList->destroy($id);
