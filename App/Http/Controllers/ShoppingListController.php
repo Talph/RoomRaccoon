@@ -47,7 +47,7 @@ class ShoppingListController extends Controller
         ]);
 
         $ShoppingListItem = new ShoppingListItem();
-        for ($i = 0; $i < count($request->get('product')); $i++) {
+        for ($i = 0; $i < count($request->get('name')); $i++) {
             $ShoppingListItem->create([
                 'shopping_list_id' => $createdShoppingList['id'],
                 'name' => $createdShoppingList['name'],
@@ -73,12 +73,12 @@ class ShoppingListController extends Controller
         ]);
 
         $ShoppingListItem = new ShoppingListItem();
-        for ($i = 0; $i < count($request->get('product')); $i++) {
+        for ($i = 0; $i < count($request->get('name')); $i++) {
             $ShoppingListItem->update([
                 'id' => $request->get('item_id'),
                 [
                     'shopping_list_id' => $createdShoppingList['id'],
-                    'product' => $request->get('product')[$i],
+                    'name' => $request->get('name')[$i],
                     'description' => $request->get('description'),
                     'quantity' => $request->get('item_quantity')[$i],
                 ]
