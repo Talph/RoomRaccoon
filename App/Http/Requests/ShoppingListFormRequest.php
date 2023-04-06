@@ -17,8 +17,8 @@ class ShoppingListFormRequest extends FormRequest
             'user_id' => 'int,required',
             'description' => 'string,required',
             'name' => 'array,required',
-            'quantity' => 'array,required',
-            'price' => 'array,required',
+            'item_quantity' => 'array,required',
+            'item_price' => 'array',
             'is_checked' => 'array,required',
         ];
     }

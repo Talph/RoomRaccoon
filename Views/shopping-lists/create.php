@@ -16,7 +16,7 @@
 
                 <?php include VIEW_PATH . '/errors/' . 'messages' . '.php'; ?>
 
-                <form action="/shopping lists/store" method="post">
+                <form action="/shopping-lists/store" method="post">
                     <div class="container">
                         <div class="row clearfix">
                             <div class="col-md-12">
@@ -24,19 +24,19 @@
                                     <thead>
                                     <tr>
                                         <th class="text-center"> #</th>
-                                        <th class="text-center"> Product</th>
+                                        <th class="text-center"> Name</th>
                                         <th class="text-center"> Qty</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr id='addr0'>
                                         <td>1</td>
-                                        <td><input type="text" name='product[]' placeholder='Enter Product Name'
+                                        <td><input type="text" name='name[]' placeholder='Enter item name'
                                                    class="form-control" required/></td>
-                                        <td><input type="number" name='line_quantity[]' placeholder='Enter Qty'
+                                        <td><input type="number" name='item_quantity[]' placeholder='Enter Qty'
                                                    class="form-control quantity" step="0" min="0" required/></td>
-                                        <td><input type="text" name='line_price[]' placeholder='Enter Unit Price'
-                                                   class="form-control price" step="0.00" min="0"  required/></td>
+                                        <td><input type="text" name='item_price[]' placeholder='Enter Unit Price'
+                                                   class="form-control price" step="0.00" min="0"/></td>
                                     </tr>
                                     <tr id='addr1'></tr>
                                     </tbody>
