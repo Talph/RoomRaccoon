@@ -14,7 +14,9 @@ class DashboardController extends Controller
     {
         $lists = new ShoppingList();
 
-        return View::make('dashboard/index', ['lists' => $lists->all()]);
+        return View::make('dashboard/index', [
+            'lists' => $lists->all()
+        ]);
     }
 
 }

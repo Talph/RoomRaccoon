@@ -58,7 +58,6 @@ class ShoppingListController extends Controller
         }
 
         return Redirect::route('/shopping-lists', ['success_messages' => 'Created shopping list successfully!']);
-
     }
 
     public function update(Request $request): Redirect
@@ -93,6 +92,7 @@ class ShoppingListController extends Controller
     {
         $ShoppingList = new ShoppingList();
         $ShoppingList->delete($id);
+
         return Redirect::route('/shopping-lists');
     }
 
@@ -100,6 +100,7 @@ class ShoppingListController extends Controller
     {
         $ShoppingList = new ShoppingList();
         $ShoppingList->destroy($id);
+
         return Redirect::route('/shopping-lists');
     }
 }
