@@ -43,7 +43,7 @@
                                     <tbody>
                                     <tr id='addr0'>
                                         <td>1</td>
-                                        <td><input type="text" name='name[]' placeholder='Enter item name'
+                                        <td><input type="text" name='item_name[]' placeholder='Enter item name'
                                                    class="form-control" required/></td>
                                         <td><input type="number" name='item_quantity[]' placeholder='Enter Qty'
                                                    class="form-control quantity" step="0" min="0" required/></td>

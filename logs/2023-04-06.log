@@ -1,0 +1,18 @@
+[06-Apr-2023 16:30:30 UTC] Uncaught exception: 'Error' with message 'Typed property Core\Http\Router::$requestObject must not be accessed before initialization'
+Stack trace: #0 /Users/talph/Dev/Home/roomraccoon/Core/Http/Router.php(69): Core\Http\Router->getMethodArguments(Object(App\Http\Controllers\ShoppingListController), 'store')
+#1 /Users/talph/Dev/Home/roomraccoon/public/index.php(45): Core\Http\Router->run()
+#2 /Users/talph/.composer/vendor/laravel/valet/server.php(110): require('/Users/talph/De...')
+#3 {main}
+Thrown in '/Users/talph/Dev/Home/roomraccoon/Core/Http/Router.php' on line 103
+[06-Apr-2023 16:30:34 UTC] Uncaught exception: 'Error' with message 'Typed property Core\Http\Router::$requestObject must not be accessed before initialization'
+Stack trace: #0 /Users/talph/Dev/Home/roomraccoon/Core/Http/Router.php(69): Core\Http\Router->getMethodArguments(Object(App\Http\Controllers\ShoppingListController), 'store')
+#1 /Users/talph/Dev/Home/roomraccoon/public/index.php(45): Core\Http\Router->run()
+#2 /Users/talph/.composer/vendor/laravel/valet/server.php(110): require('/Users/talph/De...')
+#3 {main}
+Thrown in '/Users/talph/Dev/Home/roomraccoon/Core/Http/Router.php' on line 103
+[06-Apr-2023 16:31:09 UTC] Uncaught exception: 'Error' with message 'Typed property Core\Http\Router::$requestObject must not be accessed before initialization'
+Stack trace: #0 /Users/talph/Dev/Home/roomraccoon/Core/Http/Router.php(69): Core\Http\Router->getMethodArguments(Object(App\Http\Controllers\ShoppingListController), 'store')
+#1 /Users/talph/Dev/Home/roomraccoon/public/index.php(45): Core\Http\Router->run()
+#2 /Users/talph/.composer/vendor/laravel/valet/server.php(110): require('/Users/talph/De...')
+#3 {main}
+Thrown in '/Users/talph/Dev/Home/roomraccoon/Core/Http/Router.php' on line 103

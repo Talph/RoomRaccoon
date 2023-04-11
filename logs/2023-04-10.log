@@ -1,0 +1,40 @@
+[10-Apr-2023 14:36:17 UTC] Uncaught exception: 'TypeError' with message 'count(): Argument #1 ($value) must be of type Countable|array, null given'
+Stack trace: #0 /Users/talph/Dev/Home/roomraccoon/App/Http/Controllers/ShoppingListController.php(51): count(NULL)
+#1 [internal function]: App\Http\Controllers\ShoppingListController->store(Object(App\Http\Requests\ShoppingListFormRequest))
+#2 /Users/talph/Dev/Home/roomraccoon/Core/Http/Router.php(83): call_user_func_array(Array, Array)
+#3 /Users/talph/Dev/Home/roomraccoon/public/index.php(45): Core\Http\Router->run()
+#4 /Users/talph/.composer/vendor/laravel/valet/server.php(110): require('/Users/talph/De...')
+#5 {main}
+Thrown in '/Users/talph/Dev/Home/roomraccoon/App/Http/Controllers/ShoppingListController.php' on line 51
+[10-Apr-2023 14:37:04 UTC] Uncaught exception: 'TypeError' with message 'count(): Argument #1 ($value) must be of type Countable|array, null given'
+Stack trace: #0 /Users/talph/Dev/Home/roomraccoon/App/Http/Controllers/ShoppingListController.php(51): count(NULL)
+#1 [internal function]: App\Http\Controllers\ShoppingListController->store(Object(App\Http\Requests\ShoppingListFormRequest))
+#2 /Users/talph/Dev/Home/roomraccoon/Core/Http/Router.php(83): call_user_func_array(Array, Array)
+#3 /Users/talph/Dev/Home/roomraccoon/public/index.php(45): Core\Http\Router->run()
+#4 /Users/talph/.composer/vendor/laravel/valet/server.php(110): require('/Users/talph/De...')
+#5 {main}
+Thrown in '/Users/talph/Dev/Home/roomraccoon/App/Http/Controllers/ShoppingListController.php' on line 51
+[10-Apr-2023 14:37:32 UTC] Uncaught exception: 'TypeError' with message 'count(): Argument #1 ($value) must be of type Countable|array, null given'
+Stack trace: #0 /Users/talph/Dev/Home/roomraccoon/App/Http/Controllers/ShoppingListController.php(51): count(NULL)
+#1 [internal function]: App\Http\Controllers\ShoppingListController->store(Object(App\Http\Requests\ShoppingListFormRequest))
+#2 /Users/talph/Dev/Home/roomraccoon/Core/Http/Router.php(83): call_user_func_array(Array, Array)
+#3 /Users/talph/Dev/Home/roomraccoon/public/index.php(45): Core\Http\Router->run()
+#4 /Users/talph/.composer/vendor/laravel/valet/server.php(110): require('/Users/talph/De...')
+#5 {main}
+Thrown in '/Users/talph/Dev/Home/roomraccoon/App/Http/Controllers/ShoppingListController.php' on line 51
+[10-Apr-2023 14:50:34 UTC] Uncaught exception: 'TypeError' with message 'count(): Argument #1 ($value) must be of type Countable|array, null given'
+Stack trace: #0 /Users/talph/Dev/Home/roomraccoon/App/Http/Controllers/ShoppingListController.php(51): count(NULL)
+#1 [internal function]: App\Http\Controllers\ShoppingListController->store(Object(App\Http\Requests\ShoppingListFormRequest))
+#2 /Users/talph/Dev/Home/roomraccoon/Core/Http/Router.php(83): call_user_func_array(Array, Array)
+#3 /Users/talph/Dev/Home/roomraccoon/public/index.php(45): Core\Http\Router->run()
+#4 /Users/talph/.composer/vendor/laravel/valet/server.php(110): require('/Users/talph/De...')
+#5 {main}
+Thrown in '/Users/talph/Dev/Home/roomraccoon/App/Http/Controllers/ShoppingListController.php' on line 51
+[10-Apr-2023 14:55:59 UTC] Uncaught exception: 'ErrorException' with message 'Undefined array key "item_name"'
+Stack trace: #0 /Users/talph/Dev/Home/roomraccoon/App/Http/Controllers/ShoppingListController.php(55): Core\Error::errorHandler(2, 'Undefined array...', '/Users/talph/De...', 55)
+#1 [internal function]: App\Http\Controllers\ShoppingListController->store(Object(App\Http\Requests\ShoppingListFormRequest))
+#2 /Users/talph/Dev/Home/roomraccoon/Core/Http/Router.php(83): call_user_func_array(Array, Array)
+#3 /Users/talph/Dev/Home/roomraccoon/public/index.php(45): Core\Http\Router->run()
+#4 /Users/talph/.composer/vendor/laravel/valet/server.php(110): require('/Users/talph/De...')
+#5 {main}
+Thrown in '/Users/talph/Dev/Home/roomraccoon/App/Http/Controllers/ShoppingListController.php' on line 55

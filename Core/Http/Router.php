@@ -47,6 +47,7 @@ class Router
 
     /**
      * @throws ViewNotFoundException
+     * @throws Exception
      */
     public function run(): void
     {
@@ -87,10 +88,9 @@ class Router
     /**
      * @param $handler
      * @param $method
-     * @return mixed|object|string|null
-     * @throws Exception
+     * @return array|Redirect|mixed|object|void|null
      */
-    public function getMethodArguments($handler, $method): mixed
+    public function getMethodArguments($handler, $method)
     {
         try {
             if (method_exists($handler, $method)) {

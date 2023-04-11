@@ -11,6 +11,6 @@ use Core\Model;
  */
 class ShoppingListItem extends Model
 {
-    protected string $table = 'shopping_items';
+    protected string $table = 'shopping_list_items';
 
 }

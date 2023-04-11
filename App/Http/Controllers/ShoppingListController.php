@@ -17,19 +17,19 @@ class ShoppingListController extends Controller
 
     public function index(): View
     {
-        $ShoppingLists = new ShoppingList();
+        $shoppingLists = new ShoppingList();
 
-        return View::make("/shopping-lists/index", ['ShoppingLists' => $ShoppingLists->all()]);
+        return View::make("/shopping-lists/index", ['shoppingLists' => $shoppingLists->all()]);
     }
 
     public function show(int $id): View
     {
-        $ShoppingList = new ShoppingList();
-        $ShoppingListItems = new ShoppingListItem();
+        $shoppingList = new ShoppingList();
+        $shoppingListItems = new ShoppingListItem();
 
         return View::make('/shopping-lists/edit', [
-            'ShoppingList' => $ShoppingList->find($id),
-            'ShoppingListItems' => $ShoppingListItems->where('ShoppingList_id', '=', $id),
+            'ShoppingList' => $shoppingList->find($id),
+            'ShoppingListItems' => $shoppingListItems->where('shopping_list_id', '=', $id),
         ]);
     }
 
@@ -40,21 +40,23 @@ class ShoppingListController extends Controller
 
     public function store(ShoppingListFormRequest $request): Redirect
     {
-        $ShoppingList = new ShoppingList();
-        $createdShoppingList = $ShoppingList->create([
+        $shoppingList = new ShoppingList();
+        $createdShoppingList = $shoppingList->create([
             'user_id' => $request->get('user_id'),
             'title' => $request->get('title'),
             'description' => $request->get('description'),
         ]);
 
-        $ShoppingListItem = new ShoppingListItem();
-        for ($i = 0; $i < count($request->get('name')); $i++) {
-            $ShoppingListItem->create([
-                'shopping_list_id' => $createdShoppingList['id'],
-                'name' => $createdShoppingList['item_name'],
-                'quantity' => $request->get('item_quantity')[$i],
-                'price' => $request->get('item_price')[$i],
-            ]);
+        if($createdShoppingList) {
+            $shoppingListItem = new ShoppingListItem();
+            for ($i = 0; $i < count($request->get('item_name')); $i++) {
+                $shoppingListItem->create([
+                    'shopping_list_id' => $createdShoppingList['id'],
+                    'name' => $request->get('item_name')[$i],
+                    'quantity' => $request->get('item_quantity')[$i],
+                    'price' => $request->get('item_price')[$i],
+                ]);
+            }
         }
 
         return Redirect::route('/shopping-lists', ['success_messages' => 'Created shopping list successfully!']);
@@ -62,8 +64,8 @@ class ShoppingListController extends Controller
 
     public function update(Request $request): Redirect
     {
-        $ShoppingList = new ShoppingList();
-        $createdShoppingList = $ShoppingList->update([
+        $shoppingList = new ShoppingList();
+        $createdShoppingList = $shoppingList->update([
             'id' => $request->get('id'),
             [
                 'user_id' => $request->get('user_id'),
@@ -71,9 +73,9 @@ class ShoppingListController extends Controller
             ],
         ]);
 
-        $ShoppingListItem = new ShoppingListItem();
+        $shoppingListItem = new ShoppingListItem();
         for ($i = 0; $i < count($request->get('name')); $i++) {
-            $ShoppingListItem->update([
+            $shoppingListItem->update([
                 'id' => $request->get('item_id'),
                 [
                     'shopping_list_id' => $createdShoppingList['id'],
@@ -89,16 +91,16 @@ class ShoppingListController extends Controller
 
     public function delete(int $id): Redirect
     {
-        $ShoppingList = new ShoppingList();
-        $ShoppingList->delete($id);
+        $shoppingList = new ShoppingList();
+        $shoppingList->delete($id);
 
         return Redirect::route('/shopping-lists');
     }
 
     public function destroy(int $id): Redirect
     {
-        $ShoppingList = new ShoppingList();
-        $ShoppingList->destroy($id);
+        $shoppingList = new ShoppingList();
+        $shoppingList->destroy($id);
 
         return Redirect::route('/shopping-lists');
     }

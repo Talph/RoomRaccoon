@@ -31,12 +31,11 @@ CREATE TABLE IF NOT EXISTS `shopping_lists`
 );
 
 
-CREATE TABLE IF NOT EXISTS `shopping_items`
+CREATE TABLE IF NOT EXISTS `shopping_list_items`
 (
     `id`               int            NOT NULL AUTO_INCREMENT,
     `shopping_list_id` int            NOT NULL,
     `name`             varchar(255)   NOT NULL,
-    `description`      varchar(255)   NOT NULL,
     `price`            decimal(10, 4) NULL,
     `quantity`         int(11)        NOT NULL,
     `is_checked`       int(11)        NULL DEFAULT 0,
