@@ -26,10 +26,16 @@ class ShoppingListController extends Controller
     {
         $shoppingList = new ShoppingList();
         $shoppingListItems = new ShoppingListItem();
+        $items = $shoppingListItems->where('shopping_list_id', '=', $id);
+        $total = 0;
+        foreach($items as $item){
+            $total += $item['price'];
+        }
 
         return View::make('/shopping-lists/edit', [
-            'ShoppingList' => $shoppingList->find($id),
-            'ShoppingListItems' => $shoppingListItems->where('shopping_list_id', '=', $id),
+            'shoppingList' => $shoppingList->find($id),
+            'shoppingListItems' => $items,
+            'total' => number_format($total, 2, '.')
         ]);
     }
 

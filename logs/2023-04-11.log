@@ -1,0 +1,156 @@
+[11-Apr-2023 05:48:11 UTC] Uncaught exception: 'ErrorException' with message 'Undefined array key "price"'
+Stack trace: #0 /Users/talph/Dev/Home/roomraccoon/Views/shopping-lists/edit.php(79): Core\Error::errorHandler(2, 'Undefined array...', '/Users/talph/De...', 79)
+#1 /Users/talph/Dev/Home/roomraccoon/Core/View.php(47): include('/Users/talph/De...')
+#2 /Users/talph/Dev/Home/roomraccoon/Core/View.php(58): Core\View->render()
+#3 /Users/talph/Dev/Home/roomraccoon/Core/View.php(29): Core\View->__toString()
+#4 /Users/talph/Dev/Home/roomraccoon/Core/View.php(22): Core\View::echoView('/shopping-lists...', Array)
+#5 /Users/talph/Dev/Home/roomraccoon/App/Http/Controllers/ShoppingListController.php(32): Core\View::make('/shopping-lists...', Array)
+#6 [internal function]: App\Http\Controllers\ShoppingListController->show(8)
+#7 /Users/talph/Dev/Home/roomraccoon/Core/Http/Router.php(83): call_user_func_array(Array, Array)
+#8 /Users/talph/Dev/Home/roomraccoon/public/index.php(45): Core\Http\Router->run()
+#9 /Users/talph/.composer/vendor/laravel/valet/server.php(110): require('/Users/talph/De...')
+#10 {main}
+Thrown in '/Users/talph/Dev/Home/roomraccoon/Views/shopping-lists/edit.php' on line 79
+[11-Apr-2023 05:48:43 UTC] Uncaught exception: 'ErrorException' with message 'Undefined array key "price"'
+Stack trace: #0 /Users/talph/Dev/Home/roomraccoon/Views/shopping-lists/edit.php(79): Core\Error::errorHandler(2, 'Undefined array...', '/Users/talph/De...', 79)
+#1 /Users/talph/Dev/Home/roomraccoon/Core/View.php(47): include('/Users/talph/De...')
+#2 /Users/talph/Dev/Home/roomraccoon/Core/View.php(58): Core\View->render()
+#3 /Users/talph/Dev/Home/roomraccoon/Core/View.php(29): Core\View->__toString()
+#4 /Users/talph/Dev/Home/roomraccoon/Core/View.php(22): Core\View::echoView('/shopping-lists...', Array)
+#5 /Users/talph/Dev/Home/roomraccoon/App/Http/Controllers/ShoppingListController.php(32): Core\View::make('/shopping-lists...', Array)
+#6 [internal function]: App\Http\Controllers\ShoppingListController->show(8)
+#7 /Users/talph/Dev/Home/roomraccoon/Core/Http/Router.php(83): call_user_func_array(Array, Array)
+#8 /Users/talph/Dev/Home/roomraccoon/public/index.php(45): Core\Http\Router->run()
+#9 /Users/talph/.composer/vendor/laravel/valet/server.php(110): require('/Users/talph/De...')
+#10 {main}
+Thrown in '/Users/talph/Dev/Home/roomraccoon/Views/shopping-lists/edit.php' on line 79
+[11-Apr-2023 05:48:44 UTC] Uncaught exception: 'ErrorException' with message 'Undefined array key "price"'
+Stack trace: #0 /Users/talph/Dev/Home/roomraccoon/Views/shopping-lists/edit.php(79): Core\Error::errorHandler(2, 'Undefined array...', '/Users/talph/De...', 79)
+#1 /Users/talph/Dev/Home/roomraccoon/Core/View.php(47): include('/Users/talph/De...')
+#2 /Users/talph/Dev/Home/roomraccoon/Core/View.php(58): Core\View->render()
+#3 /Users/talph/Dev/Home/roomraccoon/Core/View.php(29): Core\View->__toString()
+#4 /Users/talph/Dev/Home/roomraccoon/Core/View.php(22): Core\View::echoView('/shopping-lists...', Array)
+#5 /Users/talph/Dev/Home/roomraccoon/App/Http/Controllers/ShoppingListController.php(32): Core\View::make('/shopping-lists...', Array)
+#6 [internal function]: App\Http\Controllers\ShoppingListController->show(8)
+#7 /Users/talph/Dev/Home/roomraccoon/Core/Http/Router.php(83): call_user_func_array(Array, Array)
+#8 /Users/talph/Dev/Home/roomraccoon/public/index.php(45): Core\Http\Router->run()
+#9 /Users/talph/.composer/vendor/laravel/valet/server.php(110): require('/Users/talph/De...')
+#10 {main}
+Thrown in '/Users/talph/Dev/Home/roomraccoon/Views/shopping-lists/edit.php' on line 79
+[11-Apr-2023 05:48:46 UTC] Uncaught exception: 'ErrorException' with message 'Undefined array key "price"'
+Stack trace: #0 /Users/talph/Dev/Home/roomraccoon/Views/shopping-lists/edit.php(79): Core\Error::errorHandler(2, 'Undefined array...', '/Users/talph/De...', 79)
+#1 /Users/talph/Dev/Home/roomraccoon/Core/View.php(47): include('/Users/talph/De...')
+#2 /Users/talph/Dev/Home/roomraccoon/Core/View.php(58): Core\View->render()
+#3 /Users/talph/Dev/Home/roomraccoon/Core/View.php(29): Core\View->__toString()
+#4 /Users/talph/Dev/Home/roomraccoon/Core/View.php(22): Core\View::echoView('/shopping-lists...', Array)
+#5 /Users/talph/Dev/Home/roomraccoon/App/Http/Controllers/ShoppingListController.php(32): Core\View::make('/shopping-lists...', Array)
+#6 [internal function]: App\Http\Controllers\ShoppingListController->show(8)
+#7 /Users/talph/Dev/Home/roomraccoon/Core/Http/Router.php(83): call_user_func_array(Array, Array)
+#8 /Users/talph/Dev/Home/roomraccoon/public/index.php(45): Core\Http\Router->run()
+#9 /Users/talph/.composer/vendor/laravel/valet/server.php(110): require('/Users/talph/De...')
+#10 {main}
+Thrown in '/Users/talph/Dev/Home/roomraccoon/Views/shopping-lists/edit.php' on line 79
+[11-Apr-2023 05:49:13 UTC] Uncaught exception: 'ErrorException' with message 'Undefined array key "price"'
+Stack trace: #0 /Users/talph/Dev/Home/roomraccoon/Views/shopping-lists/edit.php(79): Core\Error::errorHandler(2, 'Undefined array...', '/Users/talph/De...', 79)
+#1 /Users/talph/Dev/Home/roomraccoon/Core/View.php(47): include('/Users/talph/De...')
+#2 /Users/talph/Dev/Home/roomraccoon/Core/View.php(58): Core\View->render()
+#3 /Users/talph/Dev/Home/roomraccoon/Core/View.php(29): Core\View->__toString()
+#4 /Users/talph/Dev/Home/roomraccoon/Core/View.php(22): Core\View::echoView('/shopping-lists...', Array)
+#5 /Users/talph/Dev/Home/roomraccoon/App/Http/Controllers/ShoppingListController.php(32): Core\View::make('/shopping-lists...', Array)
+#6 [internal function]: App\Http\Controllers\ShoppingListController->show(8)
+#7 /Users/talph/Dev/Home/roomraccoon/Core/Http/Router.php(83): call_user_func_array(Array, Array)
+#8 /Users/talph/Dev/Home/roomraccoon/public/index.php(45): Core\Http\Router->run()
+#9 /Users/talph/.composer/vendor/laravel/valet/server.php(110): require('/Users/talph/De...')
+#10 {main}
+Thrown in '/Users/talph/Dev/Home/roomraccoon/Views/shopping-lists/edit.php' on line 79
+[11-Apr-2023 05:49:14 UTC] Uncaught exception: 'ErrorException' with message 'Undefined array key "price"'
+Stack trace: #0 /Users/talph/Dev/Home/roomraccoon/Views/shopping-lists/edit.php(79): Core\Error::errorHandler(2, 'Undefined array...', '/Users/talph/De...', 79)
+#1 /Users/talph/Dev/Home/roomraccoon/Core/View.php(47): include('/Users/talph/De...')
+#2 /Users/talph/Dev/Home/roomraccoon/Core/View.php(58): Core\View->render()
+#3 /Users/talph/Dev/Home/roomraccoon/Core/View.php(29): Core\View->__toString()
+#4 /Users/talph/Dev/Home/roomraccoon/Core/View.php(22): Core\View::echoView('/shopping-lists...', Array)
+#5 /Users/talph/Dev/Home/roomraccoon/App/Http/Controllers/ShoppingListController.php(32): Core\View::make('/shopping-lists...', Array)
+#6 [internal function]: App\Http\Controllers\ShoppingListController->show(8)
+#7 /Users/talph/Dev/Home/roomraccoon/Core/Http/Router.php(83): call_user_func_array(Array, Array)
+#8 /Users/talph/Dev/Home/roomraccoon/public/index.php(45): Core\Http\Router->run()
+#9 /Users/talph/.composer/vendor/laravel/valet/server.php(110): require('/Users/talph/De...')
+#10 {main}
+Thrown in '/Users/talph/Dev/Home/roomraccoon/Views/shopping-lists/edit.php' on line 79
+[11-Apr-2023 05:49:40 UTC] Uncaught exception: 'ErrorException' with message 'Undefined array key "price"'
+Stack trace: #0 /Users/talph/Dev/Home/roomraccoon/Views/shopping-lists/edit.php(79): Core\Error::errorHandler(2, 'Undefined array...', '/Users/talph/De...', 79)
+#1 /Users/talph/Dev/Home/roomraccoon/Core/View.php(47): include('/Users/talph/De...')
+#2 /Users/talph/Dev/Home/roomraccoon/Core/View.php(58): Core\View->render()
+#3 /Users/talph/Dev/Home/roomraccoon/Core/View.php(29): Core\View->__toString()
+#4 /Users/talph/Dev/Home/roomraccoon/Core/View.php(22): Core\View::echoView('/shopping-lists...', Array)
+#5 /Users/talph/Dev/Home/roomraccoon/App/Http/Controllers/ShoppingListController.php(32): Core\View::make('/shopping-lists...', Array)
+#6 [internal function]: App\Http\Controllers\ShoppingListController->show(8)
+#7 /Users/talph/Dev/Home/roomraccoon/Core/Http/Router.php(83): call_user_func_array(Array, Array)
+#8 /Users/talph/Dev/Home/roomraccoon/public/index.php(45): Core\Http\Router->run()
+#9 /Users/talph/.composer/vendor/laravel/valet/server.php(110): require('/Users/talph/De...')
+#10 {main}
+Thrown in '/Users/talph/Dev/Home/roomraccoon/Views/shopping-lists/edit.php' on line 79
+[11-Apr-2023 05:53:02 UTC] Uncaught exception: 'ErrorException' with message 'Undefined array key "price"'
+Stack trace: #0 /Users/talph/Dev/Home/roomraccoon/Views/shopping-lists/edit.php(80): Core\Error::errorHandler(2, 'Undefined array...', '/Users/talph/De...', 80)
+#1 /Users/talph/Dev/Home/roomraccoon/Core/View.php(47): include('/Users/talph/De...')
+#2 /Users/talph/Dev/Home/roomraccoon/Core/View.php(58): Core\View->render()
+#3 /Users/talph/Dev/Home/roomraccoon/Core/View.php(29): Core\View->__toString()
+#4 /Users/talph/Dev/Home/roomraccoon/Core/View.php(22): Core\View::echoView('/shopping-lists...', Array)
+#5 /Users/talph/Dev/Home/roomraccoon/App/Http/Controllers/ShoppingListController.php(32): Core\View::make('/shopping-lists...', Array)
+#6 [internal function]: App\Http\Controllers\ShoppingListController->show(8)
+#7 /Users/talph/Dev/Home/roomraccoon/Core/Http/Router.php(83): call_user_func_array(Array, Array)
+#8 /Users/talph/Dev/Home/roomraccoon/public/index.php(45): Core\Http\Router->run()
+#9 /Users/talph/.composer/vendor/laravel/valet/server.php(110): require('/Users/talph/De...')
+#10 {main}
+Thrown in '/Users/talph/Dev/Home/roomraccoon/Views/shopping-lists/edit.php' on line 80
+[11-Apr-2023 05:53:04 UTC] Uncaught exception: 'ErrorException' with message 'Undefined array key "price"'
+Stack trace: #0 /Users/talph/Dev/Home/roomraccoon/Views/shopping-lists/edit.php(80): Core\Error::errorHandler(2, 'Undefined array...', '/Users/talph/De...', 80)
+#1 /Users/talph/Dev/Home/roomraccoon/Core/View.php(47): include('/Users/talph/De...')
+#2 /Users/talph/Dev/Home/roomraccoon/Core/View.php(58): Core\View->render()
+#3 /Users/talph/Dev/Home/roomraccoon/Core/View.php(29): Core\View->__toString()
+#4 /Users/talph/Dev/Home/roomraccoon/Core/View.php(22): Core\View::echoView('/shopping-lists...', Array)
+#5 /Users/talph/Dev/Home/roomraccoon/App/Http/Controllers/ShoppingListController.php(32): Core\View::make('/shopping-lists...', Array)
+#6 [internal function]: App\Http\Controllers\ShoppingListController->show(8)
+#7 /Users/talph/Dev/Home/roomraccoon/Core/Http/Router.php(83): call_user_func_array(Array, Array)
+#8 /Users/talph/Dev/Home/roomraccoon/public/index.php(45): Core\Http\Router->run()
+#9 /Users/talph/.composer/vendor/laravel/valet/server.php(110): require('/Users/talph/De...')
+#10 {main}
+Thrown in '/Users/talph/Dev/Home/roomraccoon/Views/shopping-lists/edit.php' on line 80
+[11-Apr-2023 05:55:42 UTC] Uncaught exception: 'ErrorException' with message 'Undefined array key "price"'
+Stack trace: #0 /Users/talph/Dev/Home/roomraccoon/Views/shopping-lists/edit.php(80): Core\Error::errorHandler(2, 'Undefined array...', '/Users/talph/De...', 80)
+#1 /Users/talph/Dev/Home/roomraccoon/Core/View.php(47): include('/Users/talph/De...')
+#2 /Users/talph/Dev/Home/roomraccoon/Core/View.php(58): Core\View->render()
+#3 /Users/talph/Dev/Home/roomraccoon/Core/View.php(29): Core\View->__toString()
+#4 /Users/talph/Dev/Home/roomraccoon/Core/View.php(22): Core\View::echoView('/shopping-lists...', Array)
+#5 /Users/talph/Dev/Home/roomraccoon/App/Http/Controllers/ShoppingListController.php(31): Core\View::make('/shopping-lists...', Array)
+#6 [internal function]: App\Http\Controllers\ShoppingListController->show(9)
+#7 /Users/talph/Dev/Home/roomraccoon/Core/Http/Router.php(83): call_user_func_array(Array, Array)
+#8 /Users/talph/Dev/Home/roomraccoon/public/index.php(45): Core\Http\Router->run()
+#9 /Users/talph/.composer/vendor/laravel/valet/server.php(110): require('/Users/talph/De...')
+#10 {main}
+Thrown in '/Users/talph/Dev/Home/roomraccoon/Views/shopping-lists/edit.php' on line 80
+[11-Apr-2023 05:57:19 UTC] Uncaught exception: 'ErrorException' with message 'Undefined array key "price"'
+Stack trace: #0 /Users/talph/Dev/Home/roomraccoon/Views/shopping-lists/edit.php(80): Core\Error::errorHandler(2, 'Undefined array...', '/Users/talph/De...', 80)
+#1 /Users/talph/Dev/Home/roomraccoon/Core/View.php(47): include('/Users/talph/De...')
+#2 /Users/talph/Dev/Home/roomraccoon/Core/View.php(58): Core\View->render()
+#3 /Users/talph/Dev/Home/roomraccoon/Core/View.php(29): Core\View->__toString()
+#4 /Users/talph/Dev/Home/roomraccoon/Core/View.php(22): Core\View::echoView('/shopping-lists...', Array)
+#5 /Users/talph/Dev/Home/roomraccoon/App/Http/Controllers/ShoppingListController.php(31): Core\View::make('/shopping-lists...', Array)
+#6 [internal function]: App\Http\Controllers\ShoppingListController->show(9)
+#7 /Users/talph/Dev/Home/roomraccoon/Core/Http/Router.php(83): call_user_func_array(Array, Array)
+#8 /Users/talph/Dev/Home/roomraccoon/public/index.php(45): Core\Http\Router->run()
+#9 /Users/talph/.composer/vendor/laravel/valet/server.php(110): require('/Users/talph/De...')
+#10 {main}
+Thrown in '/Users/talph/Dev/Home/roomraccoon/Views/shopping-lists/edit.php' on line 80
+[11-Apr-2023 05:57:23 UTC] Uncaught exception: 'ErrorException' with message 'Undefined array key "price"'
+Stack trace: #0 /Users/talph/Dev/Home/roomraccoon/Views/shopping-lists/edit.php(80): Core\Error::errorHandler(2, 'Undefined array...', '/Users/talph/De...', 80)
+#1 /Users/talph/Dev/Home/roomraccoon/Core/View.php(47): include('/Users/talph/De...')
+#2 /Users/talph/Dev/Home/roomraccoon/Core/View.php(58): Core\View->render()
+#3 /Users/talph/Dev/Home/roomraccoon/Core/View.php(29): Core\View->__toString()
+#4 /Users/talph/Dev/Home/roomraccoon/Core/View.php(22): Core\View::echoView('/shopping-lists...', Array)
+#5 /Users/talph/Dev/Home/roomraccoon/App/Http/Controllers/ShoppingListController.php(31): Core\View::make('/shopping-lists...', Array)
+#6 [internal function]: App\Http\Controllers\ShoppingListController->show(9)
+#7 /Users/talph/Dev/Home/roomraccoon/Core/Http/Router.php(83): call_user_func_array(Array, Array)
+#8 /Users/talph/Dev/Home/roomraccoon/public/index.php(45): Core\Http\Router->run()
+#9 /Users/talph/.composer/vendor/laravel/valet/server.php(110): require('/Users/talph/De...')
+#10 {main}
+Thrown in '/Users/talph/Dev/Home/roomraccoon/Views/shopping-lists/edit.php' on line 80
